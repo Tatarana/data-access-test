@@ -11,11 +11,12 @@ import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BuiltInStrDirComponent } from './built-in-str-dir/built-in-str-dir.component';
+import { BuiltInAttrDirComponent } from './built-in-attr-dir/built-in-attr-dir.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, CommonModule ],
-  declarations: [ AppComponent, HelloComponent, UserListComponent, UserDetailComponent, BuiltInStrDirComponent ],
+  declarations: [ AppComponent, HelloComponent, UserListComponent, UserDetailComponent, BuiltInStrDirComponent, BuiltInAttrDirComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [ UserService ]
 })
