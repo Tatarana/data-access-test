@@ -9,6 +9,8 @@ export class BuiltInStrDirComponent implements OnInit {
 
   messages: string[];
   showList: boolean;
+  alertType: string;
+
   constructor() { }
 
   ngOnInit() {

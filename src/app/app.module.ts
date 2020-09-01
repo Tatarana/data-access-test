@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -13,7 +14,7 @@ import { BuiltInStrDirComponent } from './built-in-str-dir/built-in-str-dir.comp
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule ],
+  imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, CommonModule ],
   declarations: [ AppComponent, HelloComponent, UserListComponent, UserDetailComponent, BuiltInStrDirComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [ UserService ]
