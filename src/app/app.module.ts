@@ -12,11 +12,13 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { BuiltInStrDirComponent } from './built-in-str-dir/built-in-str-dir.component';
 import { BuiltInAttrDirComponent } from './built-in-attr-dir/built-in-attr-dir.component';
+import { ChangeCaseDirective } from './change-case.directive';
+import { DirectiveHostComponent } from './directive-host/directive-host.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, CommonModule ],
-  declarations: [ AppComponent, HelloComponent, UserListComponent, UserDetailComponent, BuiltInStrDirComponent, BuiltInAttrDirComponent ],
+  declarations: [ AppComponent, HelloComponent, UserListComponent, UserDetailComponent, BuiltInStrDirComponent, BuiltInAttrDirComponent, ChangeCaseDirective, DirectiveHostComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [ UserService ]
 })
