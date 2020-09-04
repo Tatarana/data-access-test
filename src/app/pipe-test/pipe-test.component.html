@@ -1,0 +1,13 @@
+<p>
+pipe-test works!
+</p>
+Date toString: {{ dateToday }}
+<br>
+Date pipe: {{ dateToday | date }}
+
+<ul class="list-group">
+  <li class="list-group-item">Date toString: {{ dateToday }}</li>
+  <li class="list-group-item">Date pipe: {{ dateToday | date }}</li>
+  <li class="list-group-item">Date pipe with params: {{ dateToday | date: 'full' }}</li>
+  <li class="list-group-item">Date pipe with multiple params: {{ dateToday | date: 'full' | uppercCase }}</li>
+</ul>

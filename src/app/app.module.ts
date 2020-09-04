@@ -15,11 +15,12 @@ import { BuiltInAttrDirComponent } from './built-in-attr-dir/built-in-attr-dir.c
 import { ChangeCaseDirective } from './change-case.directive';
 import { DirectiveHostComponent } from './directive-host/directive-host.component';
 import { UnlessDirective } from './unless.directive';
+import { PipeTestComponent } from './pipe-test/pipe-test.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, CommonModule ],
-  declarations: [ AppComponent, HelloComponent, UserListComponent, UserDetailComponent, BuiltInStrDirComponent, BuiltInAttrDirComponent, ChangeCaseDirective, DirectiveHostComponent, UnlessDirective ],
+  declarations: [ AppComponent, HelloComponent, UserListComponent, UserDetailComponent, BuiltInStrDirComponent, BuiltInAttrDirComponent, ChangeCaseDirective, DirectiveHostComponent, UnlessDirective, PipeTestComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [ UserService ]
 })
