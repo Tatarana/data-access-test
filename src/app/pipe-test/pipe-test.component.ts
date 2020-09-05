@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../services/user.service';
 import { IUser } from '../user-interface';
+import { Laptop } from '../laptop';
 
 @Component({
   selector: 'app-pipe-test',
@@ -16,6 +17,9 @@ export class PipeTestComponent implements OnInit {
 
   ngOnInit() {
     this.dateToday = new Date().toDateString();
+    let laptop: Laptop = new Laptop();
+    console.log(laptop);
+    console.log(laptop['stickers']);
   }
 
   addUser() {
