@@ -21,6 +21,10 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
+  addUser(user: IUser){
+    this._users.push(user);
+  }
+
   getUsers(): IUser[] {
     return this._users;
   }

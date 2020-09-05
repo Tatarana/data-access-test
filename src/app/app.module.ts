@@ -16,11 +16,14 @@ import { ChangeCaseDirective } from './change-case.directive';
 import { DirectiveHostComponent } from './directive-host/directive-host.component';
 import { UnlessDirective } from './unless.directive';
 import { PipeTestComponent } from './pipe-test/pipe-test.component';
+import { AppendorPipe } from './appendor.pipe';
+import { FilterPipe } from './filter.pipe';
+import { ParentComponent } from './parent/parent.component';
 
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, AppRoutingModule, HttpClientModule, CommonModule ],
-  declarations: [ AppComponent, HelloComponent, UserListComponent, UserDetailComponent, BuiltInStrDirComponent, BuiltInAttrDirComponent, ChangeCaseDirective, DirectiveHostComponent, UnlessDirective, PipeTestComponent ],
+  declarations: [ AppComponent, HelloComponent, UserListComponent, UserDetailComponent, BuiltInStrDirComponent, BuiltInAttrDirComponent, ChangeCaseDirective, DirectiveHostComponent, UnlessDirective, PipeTestComponent, AppendorPipe, FilterPipe, ParentComponent ],
   bootstrap:    [ AppComponent ],
   providers:    [ UserService ]
 })
